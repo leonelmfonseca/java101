@@ -16,6 +16,7 @@
     </properties>
     <modules>
         <module>constructs</module>
+        <module>fundamentals</module>
     </modules>
 
 </project>
