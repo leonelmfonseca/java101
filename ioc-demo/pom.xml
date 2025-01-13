@@ -7,12 +7,11 @@
 		<artifactId>java101</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-
-	<groupId>com.developer.java</groupId>
-	<artifactId>fundamentals</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>ioc-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>fundamentals</name>
-	<description>Demo project for Java Fundamentals</description>
+	<name>ioc-demo</name>
+	<description>Demo IoC examples project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -27,9 +26,7 @@
 		<url/>
 	</scm>
 	<properties>
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -52,11 +49,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>3.4.1</version>
-			</plugin>
-			<plugin>
-				<groupId>org.sonarsource.scanner.maven</groupId>
-				<artifactId>sonar-maven-plugin</artifactId>
-				<version>4.0.0.4121</version>
 			</plugin>
 		</plugins>
 	</build>

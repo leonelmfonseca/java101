@@ -17,6 +17,9 @@
     <modules>
         <module>constructs</module>
         <module>fundamentals</module>
+        <module>application-context-explained</module>
+        <module>generics</module>
+        <module>ioc-demo</module>
     </modules>
 
 </project>
