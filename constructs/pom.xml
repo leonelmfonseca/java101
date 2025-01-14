@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.developer.java</groupId>
+
     <artifactId>constructs</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -17,16 +17,6 @@
         <module>enums</module>
         <module>annotations</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.36</version>
-            <scope>provided</scope>
-        </dependency>
-
-    </dependencies>
     <build>
         <plugins>
             <plugin>

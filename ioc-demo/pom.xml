@@ -7,7 +7,7 @@
 		<artifactId>java101</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<groupId>com.example</groupId>
+
 	<artifactId>ioc-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ioc-demo</name>
@@ -25,32 +25,4 @@
 		<tag/>
 		<url/>
 	</scm>
-	<properties>
-		<java.version>17</java.version>
-	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-			<version>3.4.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<version>3.4.1</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>3.4.1</version>
-			</plugin>
-		</plugins>
-	</build>
-
 </project>

@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.leonelfonseca.java.generics</groupId>
+    <groupId>com.developer.java.generics</groupId>
     <artifactId>generics</artifactId>
     <version>1.0-SNAPSHOT</version>
 

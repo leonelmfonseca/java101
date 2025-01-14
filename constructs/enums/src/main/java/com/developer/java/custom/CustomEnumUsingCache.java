@@ -1,8 +1,8 @@
 package com.developer.java.custom;
 
+import com.developer.java.cache.EnumCache;
 import java.util.List;
 import java.util.Map;
-import util.cache.EnumCache;
 
 /*
 If enum is reused intensively, and has a considerable number of values, use unmodifiableList
