@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: your_name
+      changes:
+        - createTable:
+            tableName: company
+            columns:
+              - column:
+                  name: id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: company_name
+                  type: VARCHAR(255)
+              - column:
+                  name: foundation_year
+                  type: INT
+              - column:
+                  name: stock_ticker
+                  type: VARCHAR(10)

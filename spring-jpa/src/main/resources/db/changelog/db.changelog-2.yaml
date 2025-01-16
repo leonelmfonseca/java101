@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: your_name
+      changes:
+        - insert:
+            tableName: company
+            columns:
+              - column:
+                  name: company_name
+                  value: Google LLC
+              - column:
+                  name: foundation_year
+                  value: 1998
+              - column:
+                  name: stock_ticker
+                  value: GOOGL
+        - insert:
+            tableName: company
+            columns:
+              - column:
+                  name: company_name
+                  value: Amazon.com, Inc.
+              - column:
+                  name: foundation_year
+                  value: 1994
+              - column:
+                  name: stock_ticker
+                  value: AMZN
+        - insert:
+            tableName: company
+            columns:
+              - column:
+                  name: company_name
+                  value: Apple Inc.
+              - column:
+                  name: foundation_year
+                  value: 1976
+              - column:
+                  name: stock_ticker
+                  value: AAPL

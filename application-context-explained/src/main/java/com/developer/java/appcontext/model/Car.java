@@ -51,7 +51,7 @@ public class Car {
         this.price = 100000;
     }
 
-    // Getter and Setter for model
+    // Getter and Setter for DTO
     public String getModel() {
         return model;
     }
@@ -64,7 +64,7 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                "model='" + model + '\'' +
+                "DTO='" + model + '\'' +
                 ", manufacturer='" + manufacturer + '\'' +
                 ", year=" + year +
                 ", price=" + price +
