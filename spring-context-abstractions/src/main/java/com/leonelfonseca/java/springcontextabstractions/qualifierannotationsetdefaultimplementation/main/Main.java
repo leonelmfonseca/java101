@@ -13,7 +13,7 @@ public class Main {
 
     var context = new AnnotationConfigApplicationContext(AbstractionsConfiguration.class);
 
-    // Creates an instance of comment to send as a parameter to the publish comment use case
+    // Creates an instance of comment to send as a parameter to the publishing comment use case
     var comment = new Comment();
     comment.setAuthor("Bugs Bunny");
     comment.setText("That's all folks!");

@@ -20,12 +20,12 @@ public class Main {
     // Creates the instance of the service class and providing the dependencies
     var commentService = new CommentService(commentRepository, commentCommentNotificationProxy);
 
-    // Creates an instance of comment to send as a parameter to the publish comment use case
+    // Creates an instance of comment to send as a parameter to the publishing comment use case
     var comment = new Comment();
     comment.setAuthor("Bugs Bunny");
     comment.setText("That's all folks!");
 
-    commentService.publishComment(comment); // Calls the publish comment use case
+    commentService.publishComment(comment); // Calls the publishing comment use case
   }
 
   /**
