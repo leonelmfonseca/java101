@@ -36,7 +36,7 @@ public class Main {
    *
    *   ├── main
    *   │      └── Main.java
-   *   ├── model
+   *   ├── DTO
    *   │      └── Comment.java
    *   ├── proxies
    *   │      ├── CommentNotificationProxy.java

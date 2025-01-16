@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 /**
  * @ComponentScan annotation tell Spring in which packages to search for the classes annotated with
- * stereotype annotations. Observe that the model package is not specified because it doesn’t
+ * stereotype annotations. Observe that the DTO package is not specified because it doesn’t
  * contain classes annotated with stereotype annotations.
  */
 @ComponentScan(
