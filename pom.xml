@@ -25,7 +25,7 @@
         <module>spring-boot-dependency-injection</module>
         <module>spring-context-abstractions</module>
         <module>exception-handling</module>
-        <module>spring-data</module>
+        <module>spring-data-persistence</module>
     </modules>
     <dependencies>
         <dependency>

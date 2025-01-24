@@ -12,7 +12,7 @@
         <!-- lookup parent from repository -->
     </parent>
     <groupId>com.developer.java</groupId>
-    <artifactId>spring-data</artifactId>
+    <artifactId>spring-data-persistence</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-data</name>
     <description>Demo project for Spring JPA</description>
