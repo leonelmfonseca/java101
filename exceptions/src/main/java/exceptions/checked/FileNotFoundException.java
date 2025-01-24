@@ -1,4 +1,4 @@
-package exceptions.checked.custom;
+package exceptions.checked;
 
 import java.io.*;
 
