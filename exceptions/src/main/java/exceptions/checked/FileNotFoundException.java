@@ -8,7 +8,7 @@ public class FileNotFoundException {
 
   // Checked exceptions are checked at compile-time by the Java compiler.
   // This means that the compiler ensures that these exceptions are either caught or declared in
-  // the method signature using the throws keyword.
+  // the method signature using the throws' keyword.
   public static void main(String[] args) throws IOException {
 
     System.out.println(readFromInputStream());
