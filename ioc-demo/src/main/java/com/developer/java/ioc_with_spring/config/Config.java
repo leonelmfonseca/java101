@@ -7,6 +7,13 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class Config {
-    @Bean
-    public Engine engine() { return new Engine(); } @Bean public Car car() { return new Car(engine()); }
+  @Bean
+  public Engine engine() {
+    return new Engine();
+  }
+
+  @Bean
+  public Car car() {
+    return new Car(engine());
+  }
 }

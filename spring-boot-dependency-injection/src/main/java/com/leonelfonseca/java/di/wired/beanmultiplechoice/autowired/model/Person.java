@@ -11,7 +11,7 @@ public class Person {
   private int age = 86;
 
   /**
-   * Attention! Don't forget, Persons Car parameter name must match a bean name(method) of config file!
+   * Attention! Don't forget, Persons Cat parameter name must match a bean name(method) in config file!
    */
   private Cat happyCat;
 
