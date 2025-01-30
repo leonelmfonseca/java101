@@ -1,5 +1,7 @@
 package com.developer.java.interfaces;
 
+import static com.developer.java.output.Printing.print;
+
 // The implements keyword signifies that the SquareSequence class is designed to adhere to the
 // contract
 // specified by the Sequence interface.
@@ -24,4 +26,10 @@ public class SquareSequence implements Sequence {
     i++;
     return i * i;
   }
+
+  // This is a class method, it's not declared in the interface
+  public void whoAmI() {
+    print("I'm the square sequence");
+  }
+
 }
