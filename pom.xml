@@ -25,6 +25,9 @@
         <module>spring-boot-demo</module>
         <module>spring-boot-dependency-injection</module>
         <module>spring-context-abstractions</module>
+        <module>interfaces-and-lambda-expressions</module>
+        <module>interfaces-and-lambda-expressions/interfaces</module>
+        <module>Utils</module>
     </modules>
     <dependencies>
         <dependency>
