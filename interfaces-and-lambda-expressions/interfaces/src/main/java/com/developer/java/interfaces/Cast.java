@@ -2,7 +2,7 @@ package com.developer.java.interfaces;
 
 import static com.developer.java.output.Printing.print;
 
-public class CastAndInstanceof {
+public class Cast {
 
   public static void main(String[] args) {
     Sequence sequence = new NumberSequence(345);
