@@ -1,5 +1,8 @@
 package com.developer.java.interfaces;
 
+import static com.developer.java.output.Printing.printLn;
+import static com.developer.java.output.Printing.printOneLine;
+
 public class NumberSequence implements Sequence {
 
   private int number;
@@ -24,7 +27,7 @@ public class NumberSequence implements Sequence {
   }
 
   // This is a class method, it's not declared in the interface
-  public int IShallReturnCurrentNumberValue() {
-     return number;
+  public void printCurrentNumber() {
+    printOneLine("Number Sequence current number", String.valueOf(this.number));
   }
 }

@@ -1,4 +1,7 @@
-package com.developer.java.interfaces;
+package com.developer.java.interfaces.conversion;
+
+import com.developer.java.interfaces.NumberSequence;
+import com.developer.java.interfaces.Sequence;
 
 import static com.developer.java.output.Printing.print;
 
@@ -14,7 +17,7 @@ public class Cast {
      WARNING: When the subtype of an object is unknown, type-related errors - incompatible types - can occur.
     */
     NumberSequence numberSequence = (NumberSequence) sequence;
-    print(String.valueOf(numberSequence.IShallReturnCurrentNumberValue()), 2);
+    numberSequence.printCurrentNumber();
 
   }
 }
