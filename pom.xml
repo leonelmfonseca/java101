@@ -27,6 +27,7 @@
         <module>spring-context-abstractions</module>
         <module>interfaces-and-lambda-expressions</module>
         <module>interfaces-and-lambda-expressions/interfaces</module>
+        <module>streams</module>
         <module>Utils</module>
     </modules>
     <dependencies>
