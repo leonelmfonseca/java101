@@ -1,4 +1,8 @@
-package com.developer.java.interfaces;
+package com.developer.java.interfaces.conversion;
+
+import com.developer.java.interfaces.NumberSequence;
+import com.developer.java.interfaces.Sequence;
+import com.developer.java.interfaces.SquareSequence;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,7 +29,7 @@ public class Instanceof {
         squareSequence.whoAmI();
       }
       if (sequence instanceof NumberSequence numberSequence){
-        print(String.valueOf(numberSequence.IShallReturnCurrentNumberValue()));
+        numberSequence.printCurrentNumber();
       }
     }
 
