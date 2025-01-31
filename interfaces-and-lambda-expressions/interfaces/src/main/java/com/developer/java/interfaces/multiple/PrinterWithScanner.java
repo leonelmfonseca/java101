@@ -1,4 +1,4 @@
-package com.developer.java.interfaces.multipleinterfaces;
+package com.developer.java.interfaces.multiple;
 
 import static com.developer.java.output.Printing.print;
 
