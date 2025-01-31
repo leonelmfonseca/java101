@@ -24,6 +24,7 @@
         <module>spring-boot-demo</module>
         <module>spring-boot-dependency-injection</module>
         <module>spring-context-abstractions</module>
+        <module>streams</module>
     </modules>
     <dependencies>
         <dependency>
