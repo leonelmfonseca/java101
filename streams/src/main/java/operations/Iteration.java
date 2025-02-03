@@ -1,14 +1,6 @@
 package operations;
 
-import utils.DataLoader;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.stream.Stream;
+import utils.DataLoaderUtils;
 
 public class Iteration {
   private static final Integer BIG_WORDS_THRESHOLD = 30;
@@ -36,7 +28,7 @@ public class Iteration {
 
   public static void classicalLoop() {
     long bigWords = 0;
-    for (String word : DataLoader.getWords()) {
+    for (String word : DataLoaderUtils.getWords()) {
       if (word.length() > BIG_WORDS_THRESHOLD) {
         bigWords++;
       }
@@ -47,13 +39,13 @@ public class Iteration {
 
   // Streams follow the “what, not how” principle
   public static void streamLoop() {
-    long bigWords = DataLoader.getWords().stream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
+    long bigWords = DataLoaderUtils.getWords().stream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
      System.out.println("Big words using stream loop: " + bigWords);
 
   }
 
   public static void parallelStreamLoop() {
-    long bigWords = DataLoader.getWords().parallelStream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
+    long bigWords = DataLoaderUtils.getWords().parallelStream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
     System.out.println("Big words using parallel stream loop: " + bigWords);
   }
 }
