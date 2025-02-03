@@ -17,7 +17,9 @@ public class Iteration {
     loadText();
 
     measureExecutionTime(Iteration::classicalLoop);
+    System.out.println();
     measureExecutionTime(Iteration::streamLoop);
+    System.out.println();
     measureExecutionTime(Iteration::parallelStreamLoop);
   }
 
@@ -49,18 +51,19 @@ public class Iteration {
         bigWords++;
       }
     }
-    System.out.println("Big words: " + bigWords);
+    System.out.println("Big words  using classical loop: " + bigWords);
+
   }
 
   // Streams follow the “what, not how” principle
   public static void streamLoop() {
     long bigWords = words.stream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
-     System.out.println("Big words: " + bigWords);
+     System.out.println("Big words using stream loop: " + bigWords);
+
   }
 
-  // TODO: This takes less time than classical loop, but more than simple stream loop, why ?
   public static void parallelStreamLoop() {
     long bigWords = words.parallelStream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
-    System.out.println("Big words: " + bigWords);
+    System.out.println("Big words using parallel stream loop: " + bigWords);
   }
 }
