@@ -1,5 +1,7 @@
 package operations;
 
+import utils.DataLoader;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,12 +11,9 @@ import java.util.Set;
 import java.util.stream.Stream;
 
 public class Iteration {
-  private static final String ALL_ENGLISH_WORDS_TXT = "all-english-words.txt";
   private static final Integer BIG_WORDS_THRESHOLD = 30;
-  private static Set<String> words = new HashSet<>();
 
   public static void main(String[] args) {
-    loadText();
 
     measureExecutionTime(Iteration::classicalLoop);
     System.out.println();
@@ -23,16 +22,7 @@ public class Iteration {
     measureExecutionTime(Iteration::parallelStreamLoop);
   }
 
-  private static void loadText() {
-    // Using try-with-resources to ensure the stream is closed
-    try (InputStream inputStream =
-            Iteration.class.getResourceAsStream("/" + ALL_ENGLISH_WORDS_TXT);
-        Stream<String> lines = new BufferedReader(new InputStreamReader(inputStream)).lines()) {
-      lines.forEach(words::add); // Add each word to the set
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
-  }
+
 
   // TODO: Migrate to Utils Module
   public static void measureExecutionTime(Runnable task) {
@@ -46,7 +36,7 @@ public class Iteration {
 
   public static void classicalLoop() {
     long bigWords = 0;
-    for (String word : words) {
+    for (String word : DataLoader.getWords()) {
       if (word.length() > BIG_WORDS_THRESHOLD) {
         bigWords++;
       }
@@ -57,13 +47,13 @@ public class Iteration {
 
   // Streams follow the “what, not how” principle
   public static void streamLoop() {
-    long bigWords = words.stream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
+    long bigWords = DataLoader.getWords().stream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
      System.out.println("Big words using stream loop: " + bigWords);
 
   }
 
   public static void parallelStreamLoop() {
-    long bigWords = words.parallelStream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
+    long bigWords = DataLoader.getWords().parallelStream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
     System.out.println("Big words using parallel stream loop: " + bigWords);
   }
 }
