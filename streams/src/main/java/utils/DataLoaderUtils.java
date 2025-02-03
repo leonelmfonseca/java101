@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Stream;
 
-public class DataLoader {
+public class DataLoaderUtils {
 
     private static final String ALL_ENGLISH_WORDS_TXT = "all-english-words.txt";
     private static final Set<String> words = new HashSet<>();
@@ -28,7 +28,7 @@ public class DataLoader {
         }
     }
 
-    private DataLoader() {}
+    private DataLoaderUtils() {}
 
     public static Set<String> getWords() {
         if(words.isEmpty()) {
