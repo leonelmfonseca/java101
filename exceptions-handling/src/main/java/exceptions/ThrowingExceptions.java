@@ -2,7 +2,6 @@ package exceptions;
 
 import static java.lang.Math.random;
 
-import java.io.IOException;
 import java.util.Random;
 
 public class ThrowingExceptions {

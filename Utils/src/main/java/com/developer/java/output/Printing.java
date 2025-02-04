@@ -15,8 +15,9 @@ public class Printing {
   }
 
   public static void printOneLine(String name, String message) {
-    print(name + ": " + message );
+    print(name + ": " + message);
   }
+
   public static void print(String message) {
     System.out.println(message);
   }
@@ -28,5 +29,4 @@ public class Printing {
   public static void printLn(String... strings) {
     Arrays.stream(strings).forEach(Printing::printLn);
   }
-
 }

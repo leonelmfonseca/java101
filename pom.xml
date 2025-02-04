@@ -17,7 +17,7 @@
     <modules>
         <module>application-context-explained</module>
         <module>constructs</module>
-        <module>exceptions</module>
+        <module>exceptions-handling</module>
         <module>fundamentals</module>
         <module>generics</module>
         <module>ioc-demo</module>
@@ -26,7 +26,7 @@
         <module>spring-boot-dependency-injection</module>
         <module>spring-context-abstractions</module>
         <module>interfaces-and-lambda-expressions</module>
-        <module>interfaces-and-lambda-expressions/interfaces</module>
+        <module>spring-data-persistence</module>
         <module>streams</module>
         <module>Utils</module>
     </modules>
