@@ -1,12 +1,10 @@
 package operations;
 
-import com.developer.java.output.Printing;
 import static com.developer.java.output.Streamliner.stringJoinnerByDelimiter;
+
+import com.developer.java.output.Printing;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Collectors;
-
-
 import utils.EnglishWords;
 
 public class Filter {
