@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class Printing {
 
+  public static final String EQUALS_SEPARATOR = "==================================================";
+  
   private static final int DEFAULT_LINEBREAK_COUNT = 1;
 
   public static void print(String message, int aboveLnBreaks, int belowLnBreaks) {

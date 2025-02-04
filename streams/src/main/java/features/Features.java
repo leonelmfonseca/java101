@@ -1,7 +1,7 @@
 package features;
 
 import static org.apache.commons.lang3.StringUtils.SPACE;
-import static utils.DateTimeUtils.sleepForSeconds;
+
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -12,17 +12,18 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import utils.DataLoaderUtils;
+import utils.EnglishWords;
 
 public class Features {
 
   public static final int START_INCLUSIVE = 1;
   public static final int END_EXCLUSIVE = 3;
   // Create a stream of strings
-  private static final Stream<String> wordStream = DataLoaderUtils.getWords().stream();
+  private static final Stream<String> wordStream = EnglishWords.getWords().stream();
 
   private Features() {}
 
@@ -125,7 +126,7 @@ public class Features {
 
     StringBuilder sb = new StringBuilder();
 
-    // Generate random strings
+    // Generate randomizer strings
     sb.append(UUID.randomUUID().toString().concat("-").concat(UUID.randomUUID().toString()));
     System.out.println("Original string: " + sb.toString());
 
@@ -142,7 +143,7 @@ public class Features {
 
     StringBuilder sb = new StringBuilder();
 
-    // Generate random strings
+    // Generate randomizer strings
     sb.append(UUID.randomUUID().toString().concat("-").concat(UUID.randomUUID().toString()));
     System.out.println("Original string: " + sb.toString());
 
@@ -174,7 +175,11 @@ public class Features {
         .forEach(
             status -> {
               System.out.println(status);
-              sleepForSeconds(2);
+                try {
+                    TimeUnit.SECONDS.sleep(2);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             });
   }
 

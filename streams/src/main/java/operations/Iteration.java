@@ -1,6 +1,8 @@
 package operations;
 
-import utils.DataLoaderUtils;
+import utils.EnglishWords;
+
+import static exec.MethodExecutioner.measureExecutionTime;
 
 public class Iteration {
   private static final Integer BIG_WORDS_THRESHOLD = 30;
@@ -16,19 +18,11 @@ public class Iteration {
 
 
 
-  // TODO: Migrate to Utils Module
-  public static void measureExecutionTime(Runnable task) {
-    long startTime = System.currentTimeMillis(); // Start time
-    // Execute the task
-    task.run();
-    long endTime = System.currentTimeMillis(); // End time
-    long duration = endTime - startTime; // Duration in milliseconds
-    System.out.println("Execution time: " + duration + " milliseconds");
-  }
+
 
   public static void classicalLoop() {
     long bigWords = 0;
-    for (String word : DataLoaderUtils.getWords()) {
+    for (String word : EnglishWords.getWords()) {
       if (word.length() > BIG_WORDS_THRESHOLD) {
         bigWords++;
       }
@@ -39,13 +33,13 @@ public class Iteration {
 
   // Streams follow the “what, not how” principle
   public static void streamLoop() {
-    long bigWords = DataLoaderUtils.getWords().stream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
+    long bigWords = EnglishWords.getWords().stream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
      System.out.println("Big words using stream loop: " + bigWords);
 
   }
 
   public static void parallelStreamLoop() {
-    long bigWords = DataLoaderUtils.getWords().parallelStream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
+    long bigWords = EnglishWords.getWords().parallelStream().filter(w->w.length() > BIG_WORDS_THRESHOLD).count();
     System.out.println("Big words using parallel stream loop: " + bigWords);
   }
 }
