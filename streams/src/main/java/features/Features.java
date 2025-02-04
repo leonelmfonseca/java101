@@ -47,7 +47,7 @@ public class Features {
 
   private static void createRainbowColorsStream() {
 
-    // It's possible to create an ad-hoc stream, if you know beforehand the elements to include
+    // It's possible to create manually a stream, if you know beforehand the elements to include
     Stream<String> rainbowColors =
         Stream.of("Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet");
   }
