@@ -1,8 +1,7 @@
 package operations;
 
-import static com.developer.java.output.Streamliner.stringJoinnerByDelimiter;
-
 import com.developer.java.output.Printing;
+import com.developer.java.output.Streamliner;
 import java.util.List;
 import java.util.Random;
 import utils.EnglishWords;
@@ -12,7 +11,6 @@ public class Filter {
   private static final int MIN_WORD_LENGTH = 5;
   private static final Random random = new Random();
   private static final List<String> englishWords = EnglishWords.getWords().stream().toList();
-  
 
   private Filter() {}
 
@@ -22,12 +20,12 @@ public class Filter {
   }
 
   private static void filterByPrefix() {
-    
+
     Printing.print("Filter by prefix", 2, 0);
     Printing.print(Printing.EQUALS_SEPARATOR);
-    
+
     String prefix = Filter.getRandomPrefix();
-    
+
     if (prefix == null || prefix.isEmpty()) {
       System.out.println("No prefixes found.");
       return;
@@ -35,7 +33,7 @@ public class Filter {
 
     List<String> prefixWords = filterWordsStartingWith(prefix);
     Printing.print("Words starting with:" + prefix, 1, 0);
-    String formattedWords = stringJoinnerByDelimiter(prefixWords, ", ");
+    String formattedWords = Streamliner.stringJoinerByDelimiter(prefixWords :: stream, ", ");
     System.out.println(formattedWords);
   }
 

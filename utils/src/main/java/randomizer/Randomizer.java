@@ -2,12 +2,9 @@ package randomizer;
 
 
 import com.devskiller.jfairy.Fairy;
-
 import java.util.List;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class Randomizer {
     static Fairy fairy = Fairy.create();
