@@ -1,12 +1,12 @@
 package com.developer.java.services.organization;
 
-import org.testng.annotations.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+import com.developer.java.services.organization.model.Organization;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import com.developer.java.services.organization.model.Organization;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.testng.annotations.Test;
 
 @SpringBootTest(
     webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,

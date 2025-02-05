@@ -1,10 +1,9 @@
 package com.developer.java.appcontext.model;
 
+import javax.annotation.PostConstruct;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
 
 /*
  *  With stereotype annotations, you add the annotation above the class for which you

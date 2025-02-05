@@ -1,7 +1,6 @@
 package com.developer.java.fundamentals.accessspecifiers.columbidae.columbinae;
 
 import com.developer.java.fundamentals.accessspecifiers.columbidae.PigeonTalk;
-import com.developer.java.fundamentals.accessspecifiers.columbidae.mediumlargepigeons.RockPigeon;
 
 public class FlockBronzewingPigeon extends Phaps implements PigeonTalk {
 

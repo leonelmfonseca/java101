@@ -2,7 +2,6 @@ package com.developer.java.springdata.validator;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
-
 import java.time.Year;
 
 public class CurrentYearValidator implements ConstraintValidator <MaxCurrentYear, Integer>{

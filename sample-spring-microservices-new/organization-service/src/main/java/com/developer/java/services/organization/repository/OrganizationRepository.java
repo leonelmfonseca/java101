@@ -1,7 +1,6 @@
 package com.developer.java.services.organization.repository;
 
 import com.developer.java.services.organization.model.Organization;
-
 import java.util.ArrayList;
 import java.util.List;
 

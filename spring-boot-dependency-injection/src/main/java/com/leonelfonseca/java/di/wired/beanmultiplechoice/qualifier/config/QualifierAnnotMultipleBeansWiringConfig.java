@@ -2,9 +2,9 @@ package com.leonelfonseca.java.di.wired.beanmultiplechoice.qualifier.config;
 
 import com.leonelfonseca.java.di.wired.beanmultiplechoice.qualifier.model.Cat;
 import com.leonelfonseca.java.di.wired.beanmultiplechoice.qualifier.model.Person;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.beans.factory.annotation.Qualifier;
 
 @Configuration
 public class QualifierAnnotMultipleBeansWiringConfig {

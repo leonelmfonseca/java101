@@ -1,9 +1,8 @@
 package com.developer.java.services.employee.repository;
 
+import com.developer.java.services.employee.model.Employee;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.developer.java.services.employee.model.Employee;
 
 public class EmployeeRepository {
 

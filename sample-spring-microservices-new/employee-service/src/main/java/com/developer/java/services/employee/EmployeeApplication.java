@@ -1,12 +1,12 @@
 package com.developer.java.services.employee;
 
+import com.developer.java.services.employee.model.Employee;
+import com.developer.java.services.employee.repository.EmployeeRepository;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import com.developer.java.services.employee.model.Employee;
-import com.developer.java.services.employee.repository.EmployeeRepository;
 
 @SpringBootApplication
 @OpenAPIDefinition(info =

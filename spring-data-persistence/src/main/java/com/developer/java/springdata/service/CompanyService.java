@@ -2,9 +2,8 @@ package com.developer.java.springdata.service;
 
 import com.developer.java.springdata.dto.CompanyDTO;
 import com.developer.java.springdata.repository.CompanyRepository;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 @Service
 public class CompanyService {

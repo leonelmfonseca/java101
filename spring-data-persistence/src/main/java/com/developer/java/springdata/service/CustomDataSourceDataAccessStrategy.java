@@ -2,11 +2,10 @@ package com.developer.java.springdata.service;
 
 import com.developer.java.springdata.dto.CompanyDTO;
 import com.developer.java.springdata.repository.CompanyRepository;
+import java.util.List;
+import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.sql.DataSource;
-import java.util.List;
 
 @Service
 public class CustomDataSourceDataAccessStrategy implements DataAccessStrategy {

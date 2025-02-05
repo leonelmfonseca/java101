@@ -1,14 +1,13 @@
 package com.developer.java.services.organization;
 
+import com.developer.java.services.organization.model.Organization;
+import com.developer.java.services.organization.repository.OrganizationRepository;
+import java.util.List;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.util.Assert;
-import com.developer.java.services.organization.model.Organization;
-import com.developer.java.services.organization.repository.OrganizationRepository;
-
-import java.util.List;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class OrganizationRepositoryTest {

@@ -1,8 +1,8 @@
 package com.leonelfonseca.java.di.wired.directmethodwiring;
 
+import com.leonelfonseca.java.di.wired.directmethodwiring.config.DirectMethodWiringConfig;
 import com.leonelfonseca.java.di.wired.directmethodwiring.model.Cat;
 import com.leonelfonseca.java.di.wired.directmethodwiring.model.Person;
-import com.leonelfonseca.java.di.wired.directmethodwiring.config.DirectMethodWiringConfig;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

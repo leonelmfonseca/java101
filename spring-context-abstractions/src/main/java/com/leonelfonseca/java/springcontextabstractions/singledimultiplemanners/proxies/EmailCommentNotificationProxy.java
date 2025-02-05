@@ -2,7 +2,7 @@ package com.leonelfonseca.java.springcontextabstractions.singledimultiplemanners
 
 import com.leonelfonseca.java.springcontextabstractions.singledimultiplemanners.model.Comment;
 
-    /*
+/*
         @Configuration class, takes precedence and ensures that Spring will use the bean definition from the configuration class.
         Whether the class has a @Component annotation becomes irrelevant in this context.
         In this scenario, @Component annotation was removed from EmailCommentNotificationProxy class(although we kept it in DBCommentRepository class),

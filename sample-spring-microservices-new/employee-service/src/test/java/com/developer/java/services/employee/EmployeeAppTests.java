@@ -1,11 +1,11 @@
 package com.developer.java.services.employee;
 
+import com.developer.java.services.employee.model.Employee;
 import org.instancio.Instancio;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import com.developer.java.services.employee.model.Employee;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
     properties = {

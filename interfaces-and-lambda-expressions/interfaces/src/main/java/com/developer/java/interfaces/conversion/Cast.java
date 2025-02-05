@@ -3,8 +3,6 @@ package com.developer.java.interfaces.conversion;
 import com.developer.java.interfaces.NumberSequence;
 import com.developer.java.interfaces.Sequence;
 
-import static com.developer.java.output.Printing.print;
-
 public class Cast {
 
   public static void main(String[] args) {
