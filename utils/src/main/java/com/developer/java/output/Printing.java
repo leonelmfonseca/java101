@@ -2,6 +2,8 @@ package com.developer.java.output;
 
 import java.util.Arrays;
 
+import static java.lang.System.*;
+
 public class Printing {
 
   public static final String EQUALS_SEPARATOR =
@@ -14,7 +16,7 @@ public class Printing {
   }
 
   public static void print(String message) {
-    System.out.println(message);
+    out.println(message);
   }
 
   public static void printLn(String... strings) {
@@ -27,20 +29,24 @@ public class Printing {
 
   public static void print(String message, int aboveLnBreaks, int belowLnBreaks) {
     String builder =
-        String.valueOf(System.lineSeparator()).repeat(Math.max(0, aboveLnBreaks))
+        String.valueOf(lineSeparator()).repeat(Math.max(0, aboveLnBreaks))
             + message
-            + String.valueOf(System.lineSeparator()).repeat(Math.max(0, belowLnBreaks));
+            + String.valueOf(lineSeparator()).repeat(Math.max(0, belowLnBreaks));
     print(builder);
   }
 
   public static void printBlock(String header, String singleLine) {
-    Printing.printHeaderLn(header);
-    Printing.print(singleLine, 0, 1);
+    printHeaderLn(header);
+    print(singleLine, 0, 1);
   }
 
   public static void printHeaderLn(String header) {
-    System.out.println();
-    Printing.print(header);
-    Printing.print(EQUALS_SEPARATOR);
+    out.println();
+    print(header);
+    print(EQUALS_SEPARATOR);
+  }
+  
+  public static void print(String header, int aboveLnBreaks) {
+  
   }
 }
