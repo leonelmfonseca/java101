@@ -1,0 +1,4 @@
+IOException: An exception is thrown when an input/output operation fails, such as when reading from or writing to a file.
+SQLException: It is thrown when an error occurs while accessing a database.
+ParseException: Indicates a problem while parsing a string into another data type, such as parsing a date.
+ClassNotFoundException: It is thrown when an application tries to load a class through its string name using methods like Class.forName(), but the class with the specified name cannot be found in the classpath.
