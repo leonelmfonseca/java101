@@ -1,9 +1,9 @@
 package com.developer.java.appcontext;
 
-import net.datafaker.Faker;
 import com.developer.java.appcontext.config.BoatConfig;
 import com.developer.java.appcontext.model.Boat;
 import java.util.function.Supplier;
+import net.datafaker.Faker;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class RegisterBeanProgramatically {

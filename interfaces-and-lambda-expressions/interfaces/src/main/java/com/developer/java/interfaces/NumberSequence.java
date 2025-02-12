@@ -1,6 +1,5 @@
 package com.developer.java.interfaces;
 
-import static com.developer.java.output.Printing.printLn;
 import static com.developer.java.output.Printing.printOneLine;
 
 public class NumberSequence implements Sequence {

@@ -1,13 +1,13 @@
 package com.developer.java.services.department;
 
+import com.developer.java.services.department.model.Department;
+import com.developer.java.services.department.repository.DepartmentRepository;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
-import com.developer.java.services.department.model.Department;
-import com.developer.java.services.department.repository.DepartmentRepository;
 
 @SpringBootApplication
 @EnableFeignClients

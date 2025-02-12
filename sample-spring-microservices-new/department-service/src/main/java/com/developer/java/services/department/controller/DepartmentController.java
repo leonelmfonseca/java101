@@ -1,13 +1,12 @@
 package com.developer.java.services.department.controller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.*;
 import com.developer.java.services.department.client.EmployeeClient;
 import com.developer.java.services.department.model.Department;
 import com.developer.java.services.department.repository.DepartmentRepository;
-
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class DepartmentController {

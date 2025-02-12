@@ -1,7 +1,6 @@
 package com.developer.java.services.department.repository;
 
 import com.developer.java.services.department.model.Department;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,8 +1,8 @@
 package operations;
 
-import utils.EnglishWords;
-
 import static exec.MethodExecutioner.measureExecutionTime;
+
+import utils.EnglishWords;
 
 public class Iteration {
   private static final Integer BIG_WORDS_THRESHOLD = 30;

@@ -1,14 +1,13 @@
 package com.developer.java.services.department;
 
+import com.developer.java.services.department.model.Department;
+import com.developer.java.services.department.repository.DepartmentRepository;
+import java.util.List;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.util.Assert;
-import com.developer.java.services.department.model.Department;
-import com.developer.java.services.department.repository.DepartmentRepository;
-
-import java.util.List;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class DepartmentRepositoryTest {

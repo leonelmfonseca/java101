@@ -1,6 +1,5 @@
 package com.developer.java.interfaces;
 
-import static com.developer.java.output.Printing.print;
 import static com.developer.java.output.Printing.printOneLine;
 
 // The implements keyword signifies that the SquareSequence class is designed to adhere to the

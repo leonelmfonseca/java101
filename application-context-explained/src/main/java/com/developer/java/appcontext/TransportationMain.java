@@ -1,7 +1,7 @@
 package com.developer.java.appcontext;
 
-import com.developer.java.appcontext.model.Transportation;
 import com.developer.java.appcontext.config.TransportionConfig;
+import com.developer.java.appcontext.model.Transportation;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class TransportationMain {
