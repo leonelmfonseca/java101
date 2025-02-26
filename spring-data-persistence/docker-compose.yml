@@ -8,7 +8,7 @@ services:
       # Sensitive information like passwords should be set in environment variables
       # rather than hardcoding them in the docker-compose.yml file.
       # You can use a .env(check module root) file to manage these variables.
-      # With this config user is: "root!
+      # With this config user is: "root"
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
     volumes:
