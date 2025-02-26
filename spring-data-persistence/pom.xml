@@ -23,6 +23,7 @@
         EntityManagerFactory interface [interface org.hibernate.SessionFactory] seems to conflict with Spring's EntityManagerFactoryInfo mixin
          -->
         <jakarta-persistence.version>3.1.0</jakarta-persistence.version>
+        <mysql.version>9.2.0</mysql.version>
     </properties>
 
     <dependencies>
@@ -67,6 +68,11 @@
         <dependency>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
     </dependencies>
     <build>
