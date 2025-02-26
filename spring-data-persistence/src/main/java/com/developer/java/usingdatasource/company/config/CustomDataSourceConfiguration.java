@@ -23,9 +23,8 @@ public class CustomDataSourceConfiguration {
   private String datasourcePassword;
 
   @Bean(name = "customDataSource")
-  public DataSource dataSource() { // If Spring Boot finds a DataSource that already exists in the Spring context
-                     // it won't configure one
-
+  public DataSource
+      dataSource() { // If Spring Boot finds a DataSource that already exists in the Spring context, it won't configure a new one.
     // We will use Hikari Connection Pool, but you can choose other implementations
     HikariDataSource dataSource = new HikariDataSource();
 
@@ -35,6 +34,5 @@ public class CustomDataSourceConfiguration {
     dataSource.setPassword(datasourcePassword);
     dataSource.setConnectionTimeout(CONNECTION_TIMEOUT_MS);
     return dataSource;
-
   }
 }

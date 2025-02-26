@@ -1,7 +1,6 @@
 package com.developer.java.usingdatasource.company.entity;
 
 import com.developer.java.usingdatasource.company.validator.MaxCurrentYear;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,7 +19,6 @@ public class Company {
   private Long id;
 
   @NotNull
-  @Column(name = "company_name", length = 100)
   private String name;
 
   // Custom validator

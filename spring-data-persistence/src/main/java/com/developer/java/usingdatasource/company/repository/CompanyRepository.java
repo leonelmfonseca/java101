@@ -47,7 +47,7 @@ public class CompanyRepository {
           company.setStockTicker(resultSet.getString("stock_ticker"));
           return company;
         };
-    /* In our implementation, we utilize the SELECT query through the query
+    /* In our implementation, we use the SELECT query through the query
     method of JdbcTemplate. This approach allows us to effectively retrieve
     data from our database. To ensure accurate transformation of the
     retrieved data into Company objects, we provide a dedicated row mapper. */
