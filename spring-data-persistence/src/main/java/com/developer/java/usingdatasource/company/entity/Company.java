@@ -1,6 +1,6 @@
-package com.developer.java.springdata.entity;
+package com.developer.java.usingdatasource.company.entity;
 
-import com.developer.java.springdata.validator.MaxCurrentYear;
+import com.developer.java.usingdatasource.company.validator.MaxCurrentYear;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

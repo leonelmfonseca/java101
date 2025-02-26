@@ -1,6 +1,6 @@
-package com.developer.java.springdata.service;
+package com.developer.java.usingdatasource.company.service;
 
-import com.developer.java.springdata.dto.CompanyDTO;
+import com.developer.java.usingdatasource.company.dto.CompanyDTO;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;

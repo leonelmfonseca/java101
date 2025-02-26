@@ -1,6 +1,6 @@
-package com.developer.java.springdata.repository;
+package com.developer.java.usingdatasource.company.repository;
 
-import com.developer.java.springdata.dto.CompanyDTO;
+import com.developer.java.usingdatasource.company.dto.CompanyDTO;
 import java.util.List;
 import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,4 +1,4 @@
-package com.developer.java.springdata.dto;
+package com.developer.java.usingdatasource.company.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

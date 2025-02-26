@@ -1,4 +1,4 @@
-package com.developer.java.springdata;
+package com.developer.java.usingdatasource.company;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

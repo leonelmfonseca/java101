@@ -1,4 +1,4 @@
-package com.developer.java.springdata.validator;
+package com.developer.java.usingdatasource.company.validator;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;

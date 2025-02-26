@@ -1,7 +1,7 @@
-package com.developer.java.springdata.service;
+package com.developer.java.usingdatasource.company.service;
 
-import com.developer.java.springdata.dto.CompanyDTO;
-import com.developer.java.springdata.repository.CompanyRepository;
+import com.developer.java.usingdatasource.company.dto.CompanyDTO;
+import com.developer.java.usingdatasource.company.repository.CompanyRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

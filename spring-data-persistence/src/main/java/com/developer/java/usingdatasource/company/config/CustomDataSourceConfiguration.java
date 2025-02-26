@@ -1,4 +1,4 @@
-package com.developer.java.springdata.config;
+package com.developer.java.usingdatasource.company.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import javax.sql.DataSource;

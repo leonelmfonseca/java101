@@ -1,7 +1,7 @@
-package com.developer.java.springdata.controller;
+package com.developer.java.usingdatasource.company.controller;
 
-import com.developer.java.springdata.dto.CompanyDTO;
-import com.developer.java.springdata.service.DataAccessRouter;
+import com.developer.java.usingdatasource.company.dto.CompanyDTO;
+import com.developer.java.usingdatasource.company.service.DataAccessRouter;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

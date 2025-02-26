@@ -1,7 +1,7 @@
-package com.developer.java.springdata.controller;
+package com.developer.java.usingdatasource.company.controller;
 
-import com.developer.java.springdata.dto.CompanyDTO;
-import com.developer.java.springdata.service.CompanyService;
+import com.developer.java.usingdatasource.company.dto.CompanyDTO;
+import com.developer.java.usingdatasource.company.service.CompanyService;
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
