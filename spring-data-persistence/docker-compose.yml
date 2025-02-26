@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: docker.io/library/mysql:8.0
+    container_name: mysql_server
+    environment:
+      # Sensitive information like passwords should be set in environment variables
+      # rather than hardcoding them in the docker-compose.yml file.
+      # You can use a .env(check module root) file to manage these variables.
+      # With this config user is: "root!
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./src/main/resources/create_comment_db.sql:/docker-entrypoint-initdb.d/create_comment_db.sql
+    ports:
+      - "3306:3306"
+    networks:
+      - mysql_network
+    # Health check ensures that the MySQL service is ready
+    # before phpMyAdmin tries to connect to it.
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 5
+    restart: always
+
+  phpmyadmin:
+    image: docker.io/phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "8081:80"
+    networks:
+      - mysql_network
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+    restart: always
+
+networks:
+  mysql_network:
+    driver: bridge
+
+volumes:
+  db_data:
