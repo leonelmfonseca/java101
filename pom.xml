@@ -9,11 +9,19 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.4.1</version>
+        <relativePath/>
+        <!-- lookup parent from repository -->
+    </parent>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <hibernate.core.version>6.6.9.Final</hibernate.core.version>
+
 
     </properties>
     <modules>
@@ -28,9 +36,13 @@
         <module>spring-boot-dependency-injection</module>
         <module>spring-context-abstractions</module>
         <module>interfaces-and-lambda-expressions</module>
-        <module>spring-data-persistence</module>
+        <module>spring-persistence-layer</module>
         <module>streams</module>
         <module>utils</module>
+        <module>spring-data-datasource</module>
+        <module>constructs/enums/builtin-enums</module>
+        <module>constructs/enums/builtin-enums-using-cache</module>
+        <module>constructs/enums/enum-card-deck-example</module>
     </modules>
     <dependencies>
         <dependency>
@@ -54,6 +66,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>3.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>3.1.1</version> <!-- Check for the latest version -->
         </dependency>
         <dependency>
             <groupId>javax.annotation</groupId>
@@ -81,11 +98,7 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.17.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.core.version}</version>
-        </dependency>
+
     </dependencies>
     <build>
         <plugins>
