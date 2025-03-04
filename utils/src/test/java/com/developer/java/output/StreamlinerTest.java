@@ -2,7 +2,7 @@ package com.developer.java.output;
 
 import static com.developer.java.output.Streamliner.countStreamElems;
 import static java.time.DayOfWeek.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.devskiller.jfairy.Fairy;
 
