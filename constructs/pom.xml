@@ -17,6 +17,7 @@
         <module>enums</module>
         <module>annotations</module>
     </modules>
+
     <build>
         <plugins>
             <plugin>
