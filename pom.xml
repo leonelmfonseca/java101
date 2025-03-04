@@ -28,17 +28,17 @@
         <module>application-context-explained</module>
         <module>constructs</module>
         <module>exceptions-handling</module>
-        <module>fundamentals</module>
-        <module>generics</module>
+<!--        <module>fundamentals</module>-->
+<!--        <module>generics</module>-->
         <module>ioc-demo</module>
-        <module>sample-spring-microservices-new</module>
+<!--        <module>sample-spring-microservices-new</module>-->
         <module>spring-boot-demo</module>
-        <module>spring-boot-dependency-injection</module>
-        <module>spring-context-abstractions</module>
-        <module>interfaces-and-lambda-expressions</module>
+<!--        <module>spring-boot-dependency-injection</module>-->
+<!--        <module>spring-context-abstractions</module>-->
+<!--        <module>interfaces-and-lambda-expressions</module>-->
         <module>spring-persistence-layer</module>
-        <module>streams</module>
-        <module>utils</module>
+<!--        <module>streams</module>-->
+<!--        <module>utils</module>-->
         <module>spring-data-datasource</module>
         <module>constructs/enums/builtin-enums</module>
         <module>constructs/enums/builtin-enums-using-cache</module>
@@ -98,7 +98,12 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.17.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.10.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
