@@ -13,11 +13,10 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
     volumes:
       - db_data:/var/lib/mysql
-      - ./src/main/resources/create_comment_db.sql:/docker-entrypoint-initdb.d/create_comment_db.sql
     ports:
       - "3306:3306"
     networks:
-      - mysql_network
+      - app_network
     # Health check ensures that the MySQL service is ready
     # before phpMyAdmin tries to connect to it.
     healthcheck:
@@ -26,16 +25,17 @@ services:
       retries: 5
     restart: always
 
-  phpmyadmin:
+  spring-boot-app:
     image: docker.io/phpmyadmin/phpmyadmin:latest
-    container_name: phpmyadmin
+    container_name: spring_boot_app
     environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/${MYSQL_DATABASE}
       PMA_HOST: mysql
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     ports:
-      - "8081:80"
+      - "8081:8080"
     networks:
-      - mysql_network
+      - app_network
     depends_on:
       mysql:
         condition: service_healthy
@@ -43,7 +43,7 @@ services:
     restart: always
 
 networks:
-  mysql_network:
+  app_network:
     driver: bridge
 
 volumes:
